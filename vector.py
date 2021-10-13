@@ -11,7 +11,7 @@ Author : E Forster, s1639706
 
 import math
 
-def modulus_squared(vector):
+def modulus_squared(vector) :
 
     """
     Modulus Squared
@@ -22,7 +22,7 @@ def modulus_squared(vector):
     """
     return vector[0] ** 2 + vector[1] ** 2 + vector[2]**2
 
-def modulus(vector):
+def modulus(vector) :
 
     """
     Modulus
@@ -33,7 +33,7 @@ def modulus(vector):
     """
     return math.sqrt(modulus_squared(vector))
 
-def scalar_multiplication(vector, gamma):
+def scalar_multiplication(vector, gamma) :
 
     """
     Multiplication of a vector with a scalar, gamma
@@ -44,3 +44,38 @@ def scalar_multiplication(vector, gamma):
 
     """
     return [vector[0]*gamma, vector[1]*gamma, vector[2]*gamma]
+
+def scalar_division(vector, gamma) :
+
+    """
+
+    :param vector: vector (x, y, z)
+    :param gamma: scalar factor
+    :return: scaled vector (x/gamma, y/gamma, z/gamma)
+
+    """
+    return [vector[0]/gamma, vector[1]/gamma, vector[2]/gamma]
+
+def vector_addition(vector, different_vector) :
+
+    """
+
+    :param vector: first vector
+    :param different_vector: second vector
+    :return: vector sum (vector + different_vector)
+
+    """
+    return [vector[0] + different_vector[0], vector[1] + different_vector[1], vector[2] + different_vector[2]]
+
+def vector_subtraction(vector, different_vector) :
+
+    """
+
+    :param vector: first vector
+    :param different_vector: second vector
+    :return: vector difference (vector - different_vector)
+
+    """
+    return [vector[0] - different_vector[0], vector[1] - different_vector[1], vector[2] - different_vector[2]]
+
+
