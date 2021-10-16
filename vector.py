@@ -20,7 +20,7 @@ def modulus_squared(vector) :
     :return: square modulus x**2 + y**2 + z**2
 
     """
-    return vector[0] ** 2 + vector[1] ** 2 + vector[2]**2
+    return (vector[0] ** 2) + (vector[1] ** 2) + (vector[2] ** 2)
 
 def modulus(vector) :
 
@@ -77,5 +77,3 @@ def vector_subtraction(vector, different_vector) :
 
     """
     return [vector[0] - different_vector[0], vector[1] - different_vector[1], vector[2] - different_vector[2]]
-
-
