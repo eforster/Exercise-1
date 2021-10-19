@@ -111,7 +111,7 @@ def equal_vectors(vector, different_vector) :
 
     :param vector: first vector (x, y, z)
     :param different_vector: second vector (a, b, c)
-    :return: statement if two vectors are the same or not
+    :return: statement if two vectors are equivalent or not
 
     """
     threshold = 1.0e-7

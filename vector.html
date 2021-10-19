@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module vector</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>vector</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cforster%5Cdocuments%5Cuniversity%5Cy3%2021-22%5Ccomputer%20modelling%5Cexercise%201%5Cvector.py">c:\users\forster\documents\university\y3 21-22\computer modelling\exercise 1\vector.py</a></font></td></tr></table>
+    <p><tt>Computer&nbsp;Modelling&nbsp;Exercise&nbsp;1<br>
+&nbsp;<br>
+The&nbsp;purpose&nbsp;of&nbsp;this&nbsp;file&nbsp;is&nbsp;to&nbsp;create&nbsp;operations&nbsp;which&nbsp;can&nbsp;be&nbsp;used&nbsp;upon&nbsp;vectors.<br>
+&nbsp;<br>
+Date&nbsp;Started&nbsp;:&nbsp;12/10/21<br>
+Author&nbsp;:&nbsp;E&nbsp;Forster,&nbsp;s1639706</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="math.html">math</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-cross_product"><strong>cross_product</strong></a>(vector, different_vector)</dt><dd><tt>Cross&nbsp;Product&nbsp;of&nbsp;two&nbsp;vectors<br>
+&nbsp;<br>
+:param&nbsp;vector:&nbsp;first&nbsp;vector&nbsp;(x,&nbsp;y,&nbsp;z)<br>
+:param&nbsp;different_vector:&nbsp;second&nbsp;vector&nbsp;(a,&nbsp;b,&nbsp;c)<br>
+:return:&nbsp;vector&nbsp;cross&nbsp;product&nbsp;(vector&nbsp;x&nbsp;different_vector)&nbsp;(y*c&nbsp;-&nbsp;z*b,&nbsp;x*c&nbsp;-&nbsp;z*a,&nbsp;x*b&nbsp;-&nbsp;y*a)</tt></dd></dl>
+ <dl><dt><a name="-dot_product"><strong>dot_product</strong></a>(vector, different_vector)</dt><dd><tt>Dot&nbsp;product&nbsp;of&nbsp;two&nbsp;vectors<br>
+&nbsp;<br>
+:param&nbsp;vector:&nbsp;first&nbsp;vector&nbsp;(x,&nbsp;y,&nbsp;z)<br>
+:param&nbsp;different_vector:&nbsp;second&nbsp;vector&nbsp;(a,&nbsp;b,&nbsp;c)<br>
+:return:&nbsp;vector&nbsp;dot&nbsp;product&nbsp;(vector&nbsp;.&nbsp;different_vector)&nbsp;(x*a&nbsp;+&nbsp;y*b&nbsp;+&nbsp;z*c)</tt></dd></dl>
+ <dl><dt><a name="-equal_vectors"><strong>equal_vectors</strong></a>(vector, different_vector)</dt><dd><tt>Are&nbsp;two&nbsp;vectors&nbsp;the&nbsp;same?<br>
+&nbsp;<br>
+:param&nbsp;vector:&nbsp;first&nbsp;vector&nbsp;(x,&nbsp;y,&nbsp;z)<br>
+:param&nbsp;different_vector:&nbsp;second&nbsp;vector&nbsp;(a,&nbsp;b,&nbsp;c)<br>
+:return:&nbsp;statement&nbsp;if&nbsp;two&nbsp;vectors&nbsp;are&nbsp;equivalent&nbsp;or&nbsp;not</tt></dd></dl>
+ <dl><dt><a name="-modulus"><strong>modulus</strong></a>(vector)</dt><dd><tt>Modulus<br>
+&nbsp;<br>
+:param&nbsp;vector:&nbsp;vector&nbsp;(x,&nbsp;y,&nbsp;z)<br>
+:return:&nbsp;modulus&nbsp;(x**2&nbsp;+&nbsp;y**2&nbsp;+&nbsp;z**2)**(1/2)</tt></dd></dl>
+ <dl><dt><a name="-modulus_squared"><strong>modulus_squared</strong></a>(vector)</dt><dd><tt>Modulus&nbsp;Squared<br>
+&nbsp;<br>
+:param&nbsp;vector:&nbsp;vector&nbsp;(x,&nbsp;y,&nbsp;z)<br>
+:return:&nbsp;square&nbsp;modulus&nbsp;x**2&nbsp;+&nbsp;y**2&nbsp;+&nbsp;z**2</tt></dd></dl>
+ <dl><dt><a name="-scalar_division"><strong>scalar_division</strong></a>(vector, gamma)</dt><dd><tt>Division&nbsp;of&nbsp;a&nbsp;vector&nbsp;with&nbsp;a&nbsp;scalar,&nbsp;gamma<br>
+&nbsp;<br>
+:param&nbsp;vector:&nbsp;vector&nbsp;(x,&nbsp;y,&nbsp;z)<br>
+:param&nbsp;gamma:&nbsp;scalar&nbsp;factor,&nbsp;gamma<br>
+:return:&nbsp;scaled&nbsp;vector&nbsp;(x/gamma,&nbsp;y/gamma,&nbsp;z/gamma)</tt></dd></dl>
+ <dl><dt><a name="-scalar_multiplication"><strong>scalar_multiplication</strong></a>(vector, gamma)</dt><dd><tt>Multiplication&nbsp;of&nbsp;a&nbsp;vector&nbsp;with&nbsp;a&nbsp;scalar,&nbsp;gamma<br>
+&nbsp;<br>
+:param&nbsp;vector:&nbsp;vector&nbsp;(x,&nbsp;y,&nbsp;z)<br>
+:param&nbsp;gamma:&nbsp;scalar&nbsp;factor,&nbsp;gamma<br>
+:return:&nbsp;scaled&nbsp;vector&nbsp;(x*gamma,&nbsp;y*gamma,&nbsp;z*gamma)</tt></dd></dl>
+ <dl><dt><a name="-vector_addition"><strong>vector_addition</strong></a>(vector, different_vector)</dt><dd><tt>Addition&nbsp;of&nbsp;two&nbsp;vectors<br>
+&nbsp;<br>
+:param&nbsp;vector:&nbsp;first&nbsp;vector&nbsp;(x,&nbsp;y,&nbsp;z)<br>
+:param&nbsp;different_vector:&nbsp;second&nbsp;vector&nbsp;(a,&nbsp;b,&nbsp;c)<br>
+:return:&nbsp;vector&nbsp;sum&nbsp;(vector&nbsp;+&nbsp;different_vector)</tt></dd></dl>
+ <dl><dt><a name="-vector_subtraction"><strong>vector_subtraction</strong></a>(vector, different_vector)</dt><dd><tt>Subtraction&nbsp;of&nbsp;two&nbsp;vectors<br>
+&nbsp;<br>
+:param&nbsp;vector:&nbsp;first&nbsp;vector&nbsp;(x,&nbsp;y,&nbsp;z)<br>
+:param&nbsp;different_vector:&nbsp;second&nbsp;vector&nbsp;(a,&nbsp;b,&nbsp;c)<br>
+:return:&nbsp;vector&nbsp;difference&nbsp;(vector&nbsp;-&nbsp;different_vector)</tt></dd></dl>
+</td></tr></table>
+</body></html>
