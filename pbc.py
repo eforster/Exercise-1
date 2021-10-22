@@ -12,7 +12,6 @@ Author : E Forster, s1639706
 
 """
 
-import math
 import numpy as np
 
 def pbc(x1, x2, x3, length) :
@@ -44,22 +43,22 @@ def mic(x1, x2, x3, length):
 
     x_image7 = x_real + np.array([-length, -length, -length])
 
-    # The following creates an array of all images distance to the origin
+    # The following creates an array of all images around the origin
 
-    images = np.array([np.linalg.norm(x_real),
-                       np.linalg.norm(x_image1),
-                       np.linalg.norm(x_image2),
-                       np.linalg.norm(x_image3),
-                       np.linalg.norm(x_image4),
-                       np.linalg.norm(x_image5),
-                       np.linalg.norm(x_image6),
-                       np.linalg.norm(x_image7)])
+    images = np.array([x_real, x_image1, x_image2, x_image3, x_image4, x_image5, x_image6, x_image7])
 
-    # The following gives the minimum distances from the images array and returns it, giving x closest to the origin
+    closest_to_origin = 2 * length
 
-    x_near_origin = np.amin(images)
+    for image in images :
 
-    return x_near_origin
+        distance_to_origin = np.linalg.norm(image)
+
+        if distance_to_origin < closest_to_origin :
+
+            closest_to_origin = distance_to_origin
+            x_closest_to_origin = image
+
+        return x_closest_to_origin
 
 def main() :
 
@@ -81,4 +80,3 @@ def main() :
 
 if __name__ == "__main__" :
     main()
-    
